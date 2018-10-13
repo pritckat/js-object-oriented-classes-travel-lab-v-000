@@ -1,5 +1,5 @@
 class Driver {
-  constructible(name, day) {
-    
+  constructor(name, day) {
+
   }
 }
