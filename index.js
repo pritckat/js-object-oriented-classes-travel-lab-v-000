@@ -20,6 +20,7 @@ class Route {
     let startHorizontal = 0
     let endHorizontal = 0
     eastWest.forEach(function(street) {
+      debugger
       if (this.beginningLocation.horizontal === street) {
         startHorizontal = index
         console.log(startHorizontal)
