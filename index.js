@@ -5,6 +5,6 @@ class Driver {
   }
 
   yearsExperienceFromBeginningOf(year) {
-    return this.startDate
+    return this.startDate.getFullYear()
   }
 }
