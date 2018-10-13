@@ -38,6 +38,6 @@ class Route {
       }
     })
     debugger
-    return (startHorizontal - endHorizontal) + (this.beginningLocation.horizontal - this.beginningLocation.vertical)
+    return (startHorizontal - endHorizontal) + (this.beginningLocation.vertical - this.beginningLocation.vertical)
   }
 }
