@@ -16,6 +16,6 @@ class Route {
   }
 
   blocksTravelled() {
-
+    return (beginningLocation[0] - endingLocation[0]) + (beginningLocation[1] - endingLocation[1])
   }
 }
