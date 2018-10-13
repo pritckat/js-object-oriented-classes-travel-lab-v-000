@@ -37,5 +37,7 @@ class Route {
         console.log(startHorizontal)
       }
     })
+
+    return (startHorizontal - endHorizontal) + (this.beginningLocation.horizontal - this.beginningLocation.vertical)
   }
 }
