@@ -19,13 +19,15 @@ class Route {
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
     let startHorizontal = 0
     let endHorizontal = 0
+    let startName = this.beginningLocation.horizontal
+    let endName = this.endingLocation.horizontal
     eastWest.forEach(function(street) {
       debugger
-      if (this.beginningLocation.horizontal === street) {
+      if (startName === street) {
         startHorizontal = index
         console.log(startHorizontal)
       }
-      else if (this.endingLocation.horizontal === street) {
+      else if (endName === street) {
         endHorizontal = index
         console.log(endHorizontal)
       }
