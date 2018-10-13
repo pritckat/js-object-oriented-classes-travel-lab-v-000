@@ -37,8 +37,12 @@ class Route {
         console.log(startHorizontal)
       }
     })
-    debugger
     console.log( (endHorizontal - startHorizontal) + (this.endingLocation.vertical - this.beginningLocation.vertical))
     return (endHorizontal - startHorizontal) + (this.endingLocation.vertical - this.beginningLocation.vertical)
+  }
+
+  estimatedTime(peak) {
+    let totalBlocks = this.blocksTravelled();
+    (peak) ? totalBlocks * 3 : totalBlocks * 2
   }
 }
