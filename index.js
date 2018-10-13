@@ -16,6 +16,18 @@ class Route {
   }
 
   blocksTravelled() {
-    return (this.beginningLocation[0] - this.endingLocation[0]) + (this.beginningLocation[1] - this.endingLocation[1])
+    let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+    let startHorizontal = 0
+    let endHorizontal = 0
+    eastWest.forEach(function(street) {
+      if (this.beginningLocation.horizontal === street) {
+        startHorizontal = index
+        console.log(startHorizontal)
+      }
+      else if (this.endingLocation.horizontal === street) {
+        endHorizontal = index
+        console.log(endHorizontal)
+      }
+    })
   }
 }
