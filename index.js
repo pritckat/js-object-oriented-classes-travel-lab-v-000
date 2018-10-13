@@ -21,7 +21,7 @@ class Route {
     let endHorizontal = 0
     let startName = this.beginningLocation.horizontal
     let endName = this.endingLocation.horizontal
-    eastWest.forEach(function(street) {
+    eastWest.forEach(function(street, index) {
       if (startName === street) {
         startHorizontal = index
         console.log(startHorizontal)
