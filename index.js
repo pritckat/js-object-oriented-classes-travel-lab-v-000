@@ -16,6 +16,6 @@ class Route {
   }
 
   blocksTravelled() {
-    return (beginningLocation[0] - endingLocation[0]) + (beginningLocation[1] - endingLocation[1])
+    return (this.beginningLocation[0] - this.endingLocation[0]) + (this.beginningLocation[1] - this.endingLocation[1])
   }
 }
